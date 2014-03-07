@@ -1,0 +1,70 @@
+* { 
+margin: 0; 
+padding: 0;
+}
+
+.clear { 
+clear: both;
+}
+.l0item,.l1item { 
+width: 200px;
+height: 200px;
+float: left;
+margin: 10px;
+}
+#plansza { 
+width: 700px;
+margin: 0 auto;
+}
+#plansza_wrap { 
+margin: 0 auto; 
+width: 900px;
+background: #f6f5f5;
+}
+#plansza_wrap h1 { 
+color: #4654AB;
+}
+input { 
+width: 100px;
+}
+#answers{ 
+float: left;
+width: 400px;
+border: 1px solid #CDD9E1;
+background: #E6EAEE;
+height: 50px;
+margin: 10px 20px;
+}
+#odp_button0,#odp_button1 { 
+background: #000 url('images/icons/tick_white.png') no-repeat;
+width: 26px;
+height: 26px;
+border: none;
+margin: 20px;
+}
+.inw {
+float: left;
+width: 146px;
+margin: 0 0 0 22px;
+}
+#suwakwr { 
+margin: 0 auto;
+width: 400px;
+height: 100px;
+}
+#next {
+background: #000;
+width: 20px;
+float: left;
+}
+#prev { 
+background: #000;
+width: 20px;
+float: left;
+}
+.l1ans { 
+width: 189px;
+height: 50px;
+float: left;
+margin: 10px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rozwiązanie IOKI</title>
+  <link rel="stylesheet" href="rozw.css"/>
+</head>
+
+<body>
+
+<script type="text/template" id="lesson0_template">
+	<div id="plansza_wrap">
+    <h1>Exercise 3 Vocabulary</h1>
+    <h3><%= zacheta %></h3>
+    <div id="plansza">
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie0 %>.png"/>
+    <div class="inw">1 <input type="text" id="pytanie0_input" /></div>
+    <div id="ans0"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie1 %>.png"/>
+    <div class="inw">2 <input type="text" id="pytanie1_input" /></div>
+    <div id="ans1"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie2 %>.png"/>
+   <div class="inw"> 3 <input type="text" id="pytanie2_input" /></div>
+    <div id="ans2"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie3 %>.png"/>
+    <div class="inw">4 <input type="text" id="pytanie3_input" /></div>
+    <div id="ans3"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie4 %>.png"/>
+    <div class="inw">5 <input type="text" id="pytanie4_input" /></div>
+    <div id="ans4"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="l0item">
+    <img src="images/pictures/exercise2/<%= pytanie5 %>.png"/>
+    <div class="inw">6 <input type="text" id="pytanie5_input" /></div>
+    <div id="ans5"></div>
+    <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="answers"><%= odpo %></div>
+    <input type="button" id="odp_button0" />
+    <div class="clear"></div>
+    </div>
+</div>
+</script>
+<script type="text/template" id="lesson1_template">
+	<div id="plansza_wrap">
+    <h1>Exercise 3 Vocabulary</h1>
+    <h3><%= zacheta %></h3>
+    <div id="plansza">
+    <div class="l1item">
+    1<img src="images/pictures/exercise1/<%= pytanie0 %>.png"/>
+    </div>
+    <div class="l1item">
+   2	 <img src="images/pictures/exercise1/<%= pytanie1 %>.png"/>
+    </div>
+    <div class="l1item">
+   3	 <img src="images/pictures/exercise1/<%= pytanie2 %>.png"/>
+    </div>
+    <div class="l1item">
+   4	 <img src="images/pictures/exercise1/<%= pytanie3 %>.png"/>
+    </div>
+    <div class="l1item">
+   5	 <img src="images/pictures/exercise1/<%= pytanie4 %>.png"/>
+    </div>
+    <div class="l1item">
+   6	 <img src="images/pictures/exercise1/<%= pytanie5 %>.png"/>
+    </div>
+    <div class="clear"></div>
+
+    <div class="l1ans">
+	<div class="inw">1 <input type="text" id="pytanie0_input" /><%= hint1 %></div>
+    	<div id="ans0"></div>
+    	<div class="clear"></div>
+    </div>
+    <div class="l1ans">
+	<div class="inw">2 <input type="text" id="pytanie1_input" /><%= hint2 %></div>
+    	<div id="ans1"></div>
+    	<div class="clear"></div>
+    </div>
+    <div class="l1ans">
+	<div class="inw">3 <input type="text" id="pytanie2_input" /><%= hint3 %></div>
+    	<div id="ans2"></div>
+    	<div class="clear"></div>
+    </div>
+	<div class="clear"></div>
+    <div class="l1ans">
+	<div class="inw">4 <input type="text" id="pytanie3_input" /><%= hint4 %></div>
+    	<div id="ans3"></div>
+    	<div class="clear"></div>
+    </div>
+    <div class="l1ans">
+	<div class="inw">5 <input type="text" id="pytanie4_input" /><%= hint5 %></div>
+    	<div id="ans4"></div>
+    	<div class="clear"></div>
+    </div>
+    <div class="l1ans">
+	<div class="inw">6 <input type="text" id="pytanie5_input" /><%= hint6 %></div>
+    	<div id="ans5"></div>
+    	<div class="clear"></div>
+    </div>
+    <input type="button" id="odp_button1" />
+    <div class="clear"></div>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="suwak_template">
+<div id="suwakwr">   
+    <div id="prev"><img src="images/icons/arrow_left_white.png"/></div>
+ <div id="next"><img src="images/icons/arrow_right_white.png"/></div>
+
+</div>
+</script>
+
+<div id="lekcja_container"></div>
+<div id="suwak_container"></div>
+
+  <script src="js/test/vendor/json2.js"></script>
+  <script src="js/test/vendor/jquery.js"></script>
+  <script src="js/test/vendor/underscore.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/backbone.localStorage.js"></script>
+  <script src="rozw.js"></script>
+  </body>
+</html>
